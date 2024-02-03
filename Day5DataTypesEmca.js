@@ -9,3 +9,13 @@
 
 //alert(2+2) ---> this will not run since we are using nodejs , this will run in browser , this gives a popUp on screen with the message inside the alert parenthesis 
 
+// data types in js 
+// 1.number = usually have range of 2^53 , more than this use BigInt
+// 2.string 
+// 3.null
+// 4.bool
+// 5.undefined
+// 6bigint
+// 7.symbols
+
+
