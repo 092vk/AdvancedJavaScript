@@ -14,6 +14,8 @@ console.log(`so we are in a string , and this is a value ${value} and this is a 
 let mystring = new String("hello str");
 //this is a way of creating a new object in js 
 console.log(mystring);
+console.log(mystring.valueOf());
+
 console.log(typeof(mystring));
 let mystring2 = "hello string";
 console.log(typeof(mystring2));
@@ -21,3 +23,11 @@ console.log(typeof(mystring2));
 console.log(mystring.length,mystring[0]);
 console.log(mystring2.length,mystring2[0]);
 
+//****** different functions of strings   ****/
+
+
+let a = "vivek kumar";
+console.log(a.length);
+// console.log(a.length()); --> this is wrong , becuz length is not a function but a memeber or state of the string class 
+
+ 
