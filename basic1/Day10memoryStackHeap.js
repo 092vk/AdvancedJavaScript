@@ -1,5 +1,5 @@
 //stack (primitive) ---> gives you copy of memory 
-//queue (Non - primitive ) ---> gives you reference of memory
+//queue (Non - primitive ) ---> gives you reference of memory like class , arrays , objects ,functions,date ,regex ,maps,set,promises, etc
 
 //****  stack  ***** */
 let myname = "vivek kumar";
