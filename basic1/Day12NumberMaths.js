@@ -51,3 +51,22 @@ console.log(Math.max(2,1,3,0));
 // 4.random
 console.log(Math.random());//generates random number between 0(inclusive) and 1 ;
 
+// getting a random number b/w any two numbers
+let min =10;
+let max =20;
+let randNum = (Math.random()*(max-min))+min 
+console.log(randNum);
+
+
+// getting a random integer b/w any two values
+let newMin = Math.ceil(min);
+let newMax = Math.floor(max);
+
+console.log(Math.floor(Math.random()*(max-min)+newMin));
+
+
+// getting a random integer b/w any two numbers both inclusive
+console.log(Math.floor(Math.random()*(newMax-newMin+1)+newMin));
+
+
+
