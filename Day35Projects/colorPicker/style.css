@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 211, 189);
+}
+h2{
+    font-size:8vh;
+    color: black;
+    position: absolute;
+    top:15%;
+    left: 30%;
+}
+#blue{
+    background-color: blue;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top:58%;
+    /* bottom: ; */
+    /* right: ; */
+    left: 60%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    border: 3px solid black;
+}
+#blue:hover{
+    transform: scale(1.1);
+}
+#red{
+    background-color: red;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top:58%;
+    /* bottom: ; */
+    /* right: ; */
+    left: 46%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    border: 3px solid black;
+}
+#red:hover{
+    transform: scale(1.1);
+}
+#yellow{
+    background-color: yellow;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top:35%;
+    /* bottom: ; */
+    /* right: ; */
+    left: 60%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    border: 3px solid black;
+}
+#yellow:hover{
+    transform: scale(1.1);
+}
+#pink{
+    background-color: pink;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    /* bottom: ; */
+    /* right: ; */
+    left:46%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    border: 3px solid black;
+}
+#pink:hover{
+    transform: scale(1.1);
+}
+#black{
+    background-color: black;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    /* bottom: ; */
+    /* right: ; */
+    left:32%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    color:white;
+    border: 3px solid black;
+}
+#black:hover{
+    transform: scale(1.1);
+}
+#white{
+    background-color: whitesmoke;
+    width: 10%;
+    height:18%;
+    display: inline-block;
+    position: absolute;
+    top:58% ;
+    /* bottom: ; */
+    /* right: ; */
+    left: 32%;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    border: 3px solid black;
+}
+#white:hover{
+    transform: scale(1.1);
+}
+

@@ -46,3 +46,35 @@ console.log(obj5);
 
 
 // arrays of objects
+const myobji = [
+    {
+        name : "hell",
+        class:"beauty"
+    },
+    {
+        name : "hell1",
+        class:"beauty1"
+    }
+];
+
+// we can use loops to itterate over each object in array 
+console.log(myobji[0].name);
+console.log(myobji[1].name);
+
+
+// ************Important***********
+// to get an array of all the keys of an object or value 
+console.log(tinder);
+console.log(Object.keys(tinder));
+console.log(Object.values(tinder));
+
+
+console.log(Object.entries(tinder));
+//makes each key-value pair a element in a array
+
+
+// to check if a key is present or not
+console.log(tinder.hasOwnProperty("sex"));//returns true 
+
+
+
