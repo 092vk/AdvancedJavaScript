@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=100;
+    char a = 'a';
+    for(int i=0;i<4 ; i++){
+        cout<<char(a+i);
+    }
     
     return 0;
 }

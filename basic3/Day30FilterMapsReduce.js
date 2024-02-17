@@ -91,3 +91,46 @@ console.log(result2);
 
 
 // reduce operators 
+const mynumi = [1,2,3,4];
+const total = mynumi.reduce((acc,currVal)=>{
+    console.log(`acc:${acc} and curval:${currVal}`);
+    return acc+currVal;
+},3)//***acc initial value is 3***
+console.log(total);
+
+// reduce is a operator that takes a callback function and initial value of a varibale called accumulator , it then performs some opeartion between accumulator and each and every element in array and it all gets accumulated in acccumulator at in final varibale to whihc it is assigned 
+
+
+// uses : lets say you have a shoping object list and you want to perform sum on each and every element 
+
+
+
+// ****** short form using arrow func********
+let total2 = mynumi.reduce((acc,val)=>acc+val,2);
+console.log(total2);//shorter form 
+
+
+
+let myCourse = [
+    {
+        courseName :"js",
+        coursePrice : 33
+    },
+    {
+        courseName :"py",
+        coursePrice : 33
+    },
+    {
+        courseName :"java",
+        coursePrice : 33
+    },
+    {
+        courseName :"web dev",
+        coursePrice : 33
+    },
+];
+
+let priceToPay = myCourse.reduce((acc,item)=>acc+(item.coursePrice),0);
+console.log(priceToPay);
+
+
