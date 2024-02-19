@@ -20,4 +20,19 @@
 
 
 // NodeList--***
+// nodeList--> querySelectorAll , a object dataType in DOM
+//HTMLCollections --> getElementsByClassName , a object dataType in DOM
+
+
+const tempList = document.querySelectorAll('li');
+// this will create a nodeList
+console.log("hello")
+console.log(tempList);
+console.log("hello again");
+
+
+// nodelist has forEach function 
+// to convert nodeList into array 
+const arraylist = Array.from(tempList);
+console.log(arraylist);
 
