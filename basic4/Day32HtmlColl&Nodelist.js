@@ -32,7 +32,18 @@ console.log("hello again");
 
 
 // nodelist has forEach function 
+
 // to convert nodeList into array 
 const arraylist = Array.from(tempList);
 console.log(arraylist);
+
+
+
+// htmlCollections unlike their cousins nodelist does not have forEach , so we have to convert htmlCOlections into arrays to itterate over them 
+
+console.log(arraylist);
+const temp = arraylist.map((item)=>{
+    return item*item;
+})
+console.log(temp);
 
