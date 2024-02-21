@@ -17,7 +17,13 @@
     const addLang = function(l){
         let lang = document.createElement('li');
         lang.innerText=l;
-        document.body
+        const ele = document.body.getElementsByClassName('lang')[0];
+        ele.append(lang);
     }
+
+    addLang("python");
+    addLang("java");
+    
+
 </script>
 </html>
