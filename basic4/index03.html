@@ -6,7 +6,7 @@
     <title>creating elements</title>
 </head>
 <body style="background-color:#211221;color: white;">
-    
+    <h1>today we will create our own div </h1>
 </body>
 <script>
     const body = document.querySelector('body');
@@ -14,7 +14,36 @@
     
     const newDiv = document.createElement('div');
     console.log(newDiv);
-    newDiv.innerText="hello div , you are created by js ";
 
+    // adding attributes to newDiv
+    newDiv.className = "newDiv";
+    newDiv.id= Math.floor(Math.random()*(100-10)+2);
+    console.log(newDiv);
+
+    // adding custom attribute 
+    newDiv.setAttribute('title','genratedTitle');
+    newDiv.setAttribute('customAttri',"Attri");
+
+
+    // adding style 
+    newDiv.style.backgroundColor="yellow";
+    newDiv.style.color="blue";
+    newDiv.style.padding ="16px";
+
+
+    // adding data
+    newDiv.innerText="hello there i am the newly created div ";
+    document.body.appendChild(newDiv)
+    //*****now this is not the most efficient method and there is another method , as this first fetch the div and then appends the value ********** 
+
+    // another method apart from innerText
+    const text = document.createTextNode("helo there i am back");
+    newDiv.appendChild(text);
+    document.body.appendChild(newDiv);
+
+    // createElement is important !!!!
+    // now lets say i want to make many div 's  . so we can combine this with functions and loops to create amazing thing 
+
+    
 </script>
 </html>
