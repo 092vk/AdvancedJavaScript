@@ -20,10 +20,42 @@
         const ele = document.body.getElementsByClassName('lang')[0];
         ele.append(lang);
     }
-
+    // this is costly 
     addLang("python");
     addLang("java");
-    
+
+
+    // optimised method 
+    function addOptLang(l){
+        const li = document.createElement('li');
+        li.append(document.createTextNode(l));//we are appending a text instead of rewriting it to save the time wasted in traversing and editing
+        document.querySelector(".lang").appendChild(li);
+        //we use append when we want to add more than one node 
+    }
+    addOptLang("c");
+    addOptLang("c++");
+
+    // edit the second li nodes 
+    const secondNode = document.querySelector('li:nth-child(2)');
+    // selected li(2)
+
+    // secondNode.innerHTML="mojo";
+    // edited the text , but we have to traverse in this approach 
+
+    const newLi = document.createElement('li');
+    newLi.textContent="mojo";
+    secondNode.replaceWith(newLi);
+
+
+    // edit the first node to typescript 
+    const firstNode = document.querySelector('li:nth-child(1)');
+    firstNode.outerHTML='<li>TypeScript</li>';
+
+
+    // remove a child - remove last child
+    const li = document.querySelector('li:last-child');
+    li.remove();
+
 
 </script>
 </html>
