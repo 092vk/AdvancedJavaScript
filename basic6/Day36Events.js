@@ -29,7 +29,7 @@ document.getElementById('flr1').onclick=function(){
 document.getElementById('flr1').addEventListener('click',(eventObject)=>{
     alert("you have clicked on flr1");
     console.log(eventObject);
-    
+     aur chai
 })
 
 
