@@ -19,7 +19,7 @@ document.getElementById('flr1').onclick=function(){
 // but this offers less choice and is not the prefered choice 
 
 
-// 3. using eventListners
+// 3. using eventListners --> helps in propagation 
 
 
 // 4. attachEvent()--> used in internetExplorer
@@ -29,7 +29,24 @@ document.getElementById('flr1').onclick=function(){
 document.getElementById('flr1').addEventListener('click',(eventObject)=>{
     alert("you have clicked on flr1");
     console.log(eventObject);
-     aur chai
-})
+},false)
+//addEventListner has a third argument of boolean type 
 
+
+// eventObject has many attributes of browser(window height and width,time and date ) and environment(click position , etc ) 
+
+
+// type , timeStamp , defaultPrevented(stop form or anchor tag from submiting or linking)
+// target , toElement , srcElement ,currentElement
+// clientX , clientY , screenX , screenY
+// altKey , ctrlKey , shiftKey , enterKey , spaceKey
+
+
+
+
+// event propogation(boolean parameter of addEventListner)
+// 1. event bubling - false , event capturing -true
+
+
+// lets say we have images inside a ul  , and we have two event listner , one on img and other on ul , now  if we click on img which is inside ul , which event will run first and how the event will propagate .
 
