@@ -103,3 +103,48 @@ document.getElementById('gogly').addEventListener('click',function(eventObject){
 
 
 // Q. when clicked on the image , dissapear it 
+// document.getElementById('flr4').addEventListener('click',function(eventObject){
+//     console.log(eventObject);
+//     eventObject.target.style.display="none";
+//     console.log("the flr4 is hidden now");
+// },false);
+
+// eventObject.target selects the object on which you are using the eventListner
+// this method of setting display == none ,is used to hide someting temporarily , and it is not recommended 
+
+
+// document.querySelector('.list').addEventListener('click',function(eventObject){
+//     console.log(eventObject.target);//we have added the event listner on the ul , but when we get the target we are getting the img 
+
+//     let objRemove = eventObject.target.parentNode;
+//     objRemove.remove();
+//     //we have selected the parent becuz the img is in list and we want to remove the whole list ,
+//     console.log("the clicked image is removed ");
+// })
+
+// another method 
+/*
+document.querrySelector('.list).addeventListener('click',function(eventObject){
+    let removeEle = eventObject.target.parentNode;
+    removeEle.parentNode.removeChild(removeEle);
+
+    **in this one we first go to ul and then use remove child to remove li which was clicked **
+}) */
+
+
+
+
+// but this has problem , lets say we have links and images both in ul and we want to remove images only when clicked and keep the links as it is , but currently according to the above code, when we click on the link , it will remove the whole list
+
+// ***-->> sol : use a conditional statement to check if the selected element is img or not if yes then remove it 
+
+document.querySelector('.list').addEventListener('click',function(eventObject){
+   let tag = eventObject.target.tagName;
+   if(tag =="IMG"){
+    console.log(tag);
+    eventObject.target.parentNode.remove();
+   }
+   console.log(tag);
+})
+
+
