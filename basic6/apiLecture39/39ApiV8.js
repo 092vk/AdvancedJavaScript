@@ -28,6 +28,23 @@ const url = 'https://api.github.com/users/092vk';
 const xhr = new XMLHttpRequest();//it is a object and it has many methods which we will use 
 xhr.open('GET',url);//sending request to url
 // each method here like open , send , etc have a code which we can see by readyState
-console.log(xhr.readyState);
+xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+        let obj = this.responseText;
+
+        //here we are getting the response in form of string , if we want to get elements as we do in objects , we can convert this in JSON ,and then get watever we want 
+
+        obj = JSON.parse(obj);
+        //converted string to JSON, parse method is used for it .
+
+        console.log(obj.followers);
+
+    }
+}
+
 xhr.send();//sending the request
 console.log(xhr.readyState);
+
+
+
