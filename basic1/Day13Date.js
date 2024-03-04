@@ -3,7 +3,7 @@
 let date = new Date();
 console.log(date);
 console.log(date.getTime());
-
+console.log(date.getDate());
 
 console.log(date.toString());
 console.log(date.toDateString());

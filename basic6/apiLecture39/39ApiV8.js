@@ -24,6 +24,8 @@
 
 
 
+// this is one of the earliest methods to send requests to apis 
+
 const url = 'https://api.github.com/users/092vk'; 
 const xhr = new XMLHttpRequest();//it is a object and it has many methods which we will use 
 xhr.open('GET',url);//sending request to url
@@ -48,3 +50,8 @@ console.log(xhr.readyState);
 
 
 
+
+
+
+// v8 engine(cpp based)
+// -->console,dom,fetch etc are browser apis , and not part of js core 
