@@ -114,9 +114,9 @@ promiseFive.then((resolveObj)=>{
 // promise 6
 const promiseSix = new Promise((resolve,reject)=>{
    setTimeout(function(){
-    let error = true;
+    let error = false;
     if(!error){
-        resolve ({username:"vievk",entryNo, "22bec092"});
+        resolve ({username:"vievk",entryNo: "22bec092"});
     }
     else{
         reject('error js went wrong ');
@@ -125,4 +125,74 @@ const promiseSix = new Promise((resolve,reject)=>{
 }) 
 
 
-asybc function consume 
+// async function consumePromise5(){
+//     const response = await promiseSix
+//     console.log(response);
+// } 
+
+// consumePromise5();
+
+//as we can see the above code only runs successfully when we get our request resolved , and we get error when we get rejected from our promise ,so we will use try - catch and finally here also
+
+const asyncFunc = async ()=>{
+    try {
+        const response = await promiseSix;
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }finally{
+        console.log("finnaly is also used here ");
+    }
+}
+asyncFunc();
+
+// it is necessary to have await in async function , async function is generally used to consume promise in a synchronous style 
+
+// this code will handle errors gracefully while at the same time handling promise in a synchronous style 
+
+
+
+
+// the choice between using then-catch or try-then rest on ease which you feel 
+
+
+
+
+// demonstrating use of async functions while using fetch()
+const fetchUser = async()=>{
+    try{
+        const responsi = await fetch('https://jsonplaceholder.typicode.com/users');
+        console.log(responsi);
+        const dataJ = await responsi.json();
+        // the above line gives us the json body data from the fetch api response , it is not converting anything , and it is different from JSON.parse()
+        console.log(dataJ);
+        console.log("received data ");
+
+    }catch(error){
+        console.log(`E: ${error}`);
+    }
+}
+fetchUser();
+//dont know why fetch is not working , but the syntax is correct 
+
+
+
+
+// using fetch by then and catch 
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((resolve)=>{
+    return response.json();
+})
+.then((data)=>{
+    console.log(data);//resolving above sent data
+})
+.catch((error)=>{
+    console.log("error");
+})
+// again failed but syntax is correct 
+
+
+
+
+
+// as we can see the the first output which we are getting is of the fetch , despite fetch being a async request ,  
