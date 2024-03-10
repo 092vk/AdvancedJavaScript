@@ -27,3 +27,17 @@ console.log("hello world");
 
 
 
+// objects - literals 
+const obj = {
+    name : "vievk",
+    branch: "ece",
+    marks:8.01,
+
+    tellName:function(){
+        return `my name is ${this.name}`;
+        // if we dont use this keyword the compiler gets confused which name are you talking about 
+    }
+}
+
+console.log(obj.tellName());
+
