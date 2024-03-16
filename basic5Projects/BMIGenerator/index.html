@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMIGenerator</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
-<body>
     <h1 class="heading">BMI Generator</h1>
-    <p class="text1">Height In CM : </p>
-    <input type="number" class="input1">
-    <p class="text2">Weight In KG : </p>
-    <input type="number" class="input2">
 
-    <p class="result"></p>
+    <form id="form">
+        <p><label>Height In CM:</label><input type="number" class="height"></p>
     
-    <button class="button">Calculate</button>
+        <p><label for="">Weight In KG:</label><input type="number" class="weight"></p>
 
-    <h2 class="infoHeading">BMI Weight Guide</h2>
-    <p class="info1">Under Weight = Less than 18.6</p>
-    <p class="info2">Normal Range = 18.6 and 24.9</p>
-    <p class="info3">OverWeight = Greater than 24.9</p>
+        <button id="calculate">Calculate</button>
 
+        <div id="result"></div>
+
+        <div id="lastInfo">
+            <h3>BMI Weight Guide</h3>
+            <p>Under Weight = Less than 18.6</p>
+            <p>Normal Range = 18.6 and 24.9</p>
+            <p>Overweight = Greater than 24.9</p>
+        </div>
+
+    </form>
+
+
+  
     <script src="./script.js"></script>
 
 </body>
