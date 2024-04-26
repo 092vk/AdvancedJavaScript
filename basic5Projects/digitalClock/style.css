@@ -9,10 +9,48 @@ body{
 }
 
 nav{
-    
+    background-color: #333;
+    padding: 10px;
+}
+nav ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 
+nav ul li{
+    display: inline;
+    background-color: blue;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    background-color: #555;
 }
 
 .content{
-    
+    background-color: rgb(241, 166, 166);
+    height: 20vh;
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3vh;
+    font-weight: 500;
+    border-radius: 10px;
 }
