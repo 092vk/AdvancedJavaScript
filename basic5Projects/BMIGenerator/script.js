@@ -7,7 +7,7 @@ console.log(form);
 // we can't use this as initially the form is empty and we dont want empty value , we want value only when the form is submitted  
 
 
-//we will select the form and on submit we will prevent the deafult nature of form to submit and then get the elements 
+//we will select the form and on submit we will prevent the deafult nature of form to submit and then get the elements , becuz by default when we submit the form in html , the form sends the data to given website , and chnages can be seen in url and other places , we have to avoid this default behaviour 
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();

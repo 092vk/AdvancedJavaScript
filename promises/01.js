@@ -3,6 +3,11 @@
 
 
 //typical promise 
+
+// making a promise 
+
+// the parameters inside promise resolve and reject are functions whihc are called when the promise is resolved and rejected , you have to call it while making the promise , they will be called inside .then and .catch 
+
 const promiseOne = new Promise((resolve,reject)=>{
     //do any async task
     //db , cryptography , network requests etc 
@@ -17,7 +22,6 @@ const promiseOne = new Promise((resolve,reject)=>{
 promiseOne.then(()=>{
     console.log("promise consumed");
 })
-
 
 
 // --> resolve and reject are conneted to then , catch 
